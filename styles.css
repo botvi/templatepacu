@@ -1,0 +1,74 @@
+/* Base Styles for Body */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
+    background-repeat: repeat;
+    position: relative;
+  }
+  
+  /* Gradient Overlay with Blur Effect */
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9) 65%, rgba(255,255,255,0) 100%);
+    filter: blur(5px);
+  }
+  
+  .dark body::before {
+    background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9) 65%, rgba(0,0,0,0) 100%);
+    filter: blur(5px);
+  }
+  
+  /* Mobile Menu Slide-In/Slide-Out Transitions */
+  .slide-in {
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out; /* Smoother transition */
+  }
+  
+  .slide-out {
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out; /* Smoother transition */
+  }
+  /* Custom styles for mobile menu transitions */
+#mobile-menu {
+    transform: translateX(-100%);
+  }
+  #mobile-menu.translate-x-0 {
+    transform: translateX(0);
+  }
+  
+  
+  /* Show/Hide Elements Based on Screen Size */
+  .hide-on-mobile {
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    .hide-on-mobile {
+      display: block;
+    }
+    .mobile-icon {
+      display: none;
+    }
+  }
+  
+  /* Content Container */
+.content {
+  position: relative;
+  z-index: 2; /* Ensure this is higher than the gradient overlay */
+}
+
+
+.active-category {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px; /* Atur jarak antara teks dan underline */
+}
