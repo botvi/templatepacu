@@ -10,14 +10,22 @@
     <link
       href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
       rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap-grid-only-css/dist/css/bootstrap-grid.min.css" />
+
     <script>
       tailwind.config = {
         darkMode: 'class',
       };
     </script>
   </head>
-  <body class="bg-white dark:bg-black text-black dark:text-white">
+  <body class="bg-white dark:bg-black text-gray-600 dark:text-white">
     <div class="min-h-screen flex flex-col items-center justify-center">
       <!-- NAVBAR DAN SIDEBAR -->
       <nav
@@ -268,38 +276,316 @@
       <!-- Main Content -->
       <main
         class="flex-grow container mx-auto px-4 mt-4 sm:px-6 lg:px-8 py-16 content">
-        <h1 class="text-4xl font-bold mb-8 mt-20">Artikel</h1>
-        <!-- Daftar Kategori -->
-        <div class="mb-12">
-          <div class="flex items-baseline space-x-4">
-            <a
-              href="#"
-              class="text-black dark:text-gray-300 hover:text-gray-500 mr-2 dark:hover:text-gray-600 rounded-full text-sm font-medium active-category"
-              >Semua</a
-            >
-            <a
-              href="#"
-              class="text-black dark:text-gray-300 hover:text-gray-500 mr-2 dark:hover:text-gray-600 rounded-full text-sm font-medium"
-              >Anak Pacu</a
-            >
-            <a
-              href="#"
-              class="text-black dark:text-gray-300 hover:text-gray-500 mr-2 dark:hover:text-gray-600 rounded-full text-sm font-medium"
-              >Jalur</a
-            >
-            <a
-              href="#"
-              class="text-black dark:text-gray-300 hover:text-gray-500 mr-2 dark:hover:text-gray-600 rounded-full text-sm font-medium"
-              >Juara</a
-            >
-            <a
-              href="#"
-              class="text-black dark:text-gray-300 hover:text-gray-500 mr-2 dark:hover:text-gray-600 rounded-full text-sm font-medium"
-              >Sejarah</a
-            >
+        <h1 class="text-4xl font-bold mb-8 mt-20">Seleng Putri Danau Seroja</h1>
+        <div class="container bootstrap-wrapper flex justify-start">
+          <div class="row w-full">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <p class="mb-2">
+                Dari desa Tanjung Simandolak, Kecamatan Benai, Kabupaten Kuantan
+                Singingi, Provinsi Riau.
+              </p>
+              <span class="text-xs">
+                <i class="fa fa-user"></i> #kontributor
+              </span>
+              <span class="text-xs">
+                <i class="fa fa-user"></i> 1000 #fens
+              </span>
+              <span class="text-xs">
+                <i class="fa fa-user"></i> 1000 #like
+              </span>
+              <div>
+                <strong>Julukan: Putri danau seroja</strong>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- list -->
+
+        <!-- Daftar Kategori -->
+        <!-- ****************** list card ************************* -->
+        <div class="container mt-20 bootstrap-wrapper flex justify-start">
+          <div class="row w-full">
+            <div class="col-lg-8 col-md-8 col-sm-12">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta
+              molestiae tempora perferendis eos ad consequuntur beatae, quod sed
+              obcaecati nobis harum illum eveniet laboriosam, voluptatibus
+              inventore? Accusamus sequi numquam iure!
+
+              <div class="flex justify-between mt-10">
+                <h3 class="text-xl roboto-medium">Sejarah</h3>
+                <span class="text-xs text-blue-500">
+                  <i class="fa fa-user"></i> #konributor
+                </span>
+              </div>
+              <hr class="mb-2" />
+              <p class="text-sm">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
+                corporis dolores sapiente similique laborum? Dolor quasi est
+                laborum reprehenderit hic tempora, eveniet cum amet ipsum
+                aspernatur sint porro itaque eligendi.
+              </p>
+              <p class="text-sm">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
+                corporis dolores sapiente similique laborum? Dolor quasi est
+                laborum reprehenderit hic tempora, eveniet cum amet ipsum
+                aspernatur sint porro itaque eligendi.
+              </p>
+
+              <div class="flex justify-between mt-10">
+                <h3 class="text-xl roboto-medium">Pilosofi</h3>
+                <span class="text-xs text-blue-500">
+                  <i class="fa fa-user"></i> #konributor
+                </span>
+              </div>
+              <hr class="mb-2" />
+              <p class="text-sm">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
+                corporis dolores sapiente similique laborum? Dolor quasi est
+                laborum reprehenderit hic tempora, eveniet cum amet ipsum
+                aspernatur sint porro itaque eligendi.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
+                corporis dolores sapiente similique laborum? Dolor quasi est
+                laborum reprehenderit hic tempora, eveniet cum amet ipsum
+                aspernatur sint porro itaque eligendi.
+              </p>
+              <div class="flex justify-between mt-10">
+                <h3 class="text-xl roboto-medium">Tentang Jalur</h3>
+                <span class="text-xs text-blue-500">
+                  <i class="fa fa-user"></i> #konributor
+                </span>
+              </div>
+              <hr class="mb-2" />
+              <div class="shadow-lg rounded-lg overflow-hidden">
+                <table class="min-w-full text-sm text-gray-400">
+                  <thead
+                    class="dark:bg-gray-800 bg-gray-300 text-gray-600 dark:text-white text-xs uppercase font-medium">
+                    <tr>
+                      <th
+                        scope="col"
+                        class="px-6 py-3 text-left tracking-wider">
+                        Lahir / Pembaharuan
+                      </th>
+                      <th
+                        scope="col"
+                        class="px-6 py-3 text-left tracking-wider">
+                        Tukang
+                      </th>
+                      <th
+                        scope="col"
+                        class="px-6 py-3 text-left tracking-wider">
+                        Generasi
+                      </th>
+                      <th
+                        scope="col"
+                        class="px-6 py-3 text-left tracking-wider">
+                        Generasi Jalur
+                      </th>
+                      <th
+                        scope="col"
+                        class="px-6 py-3 text-left tracking-wider">
+                        Keterangan
+                      </th>
+                      <th
+                        scope="col"
+                        class="px-6 py-3 text-left tracking-wider">
+                        Konributor
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody
+                    class="dark:bg-gray-800 dark:text-white text-gray-600 bg-gray-100">
+                    <tr class="dark:bg-gray-700 bg-gray-100 bg-opacity-20">
+                      <td class="flex px-4 py-2 whitespace-nowrap"></td>
+                      <td class="px-4 py-2 whitespace-nowrap">14</td>
+                      <td class="px-4 py-2 whitespace-nowrap">9</td>
+                      <td class="px-4 py-2 whitespace-nowrap">9</td>
+                      <td class="px-4 py-2 whitespace-nowrap">9</td>
+                      <td class="px-4 py-2 whitespace-nowrap">9</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- --------------------- -->
+              <div class="flex justify-between mt-10">
+                <h3 class="text-xl roboto-medium">Prestasi</h3>
+                <span class="text-xs text-blue-500">
+                  <i class="fa fa-user"></i> #konributor
+                </span>
+              </div>
+              <hr class="mb-2" />
+              <div class="shadow-lg rounded-lg overflow-hidden">
+                <table class="min-w-full text-sm text-gray-400">
+                  <thead
+                    class="dark:bg-gray-800 bg-gray-300 text-gray-600 dark:text-white text-xs uppercase font-medium">
+                    <tr>
+                      <th
+                        scope="col"
+                        class="px-6 py-3 text-left tracking-wider">
+                        Gelanggang
+                      </th>
+                      <th
+                        scope="col"
+                        class="px-6 py-3 text-left tracking-wider">
+                        Event
+                      </th>
+                      <th
+                        scope="col"
+                        class="px-6 py-3 text-left tracking-wider">
+                        Prestasi
+                      </th>
+                      <th
+                        scope="col"
+                        class="px-6 py-3 text-left tracking-wider">
+                        Generasi Jalur
+                      </th>
+                      <th
+                        scope="col"
+                        class="px-6 py-3 text-left tracking-wider">
+                        Konributor
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody
+                    class="dark:bg-gray-800 dark:text-white text-gray-600 bg-gray-100">
+                    <tr class="dark:bg-gray-700 bg-gray-100 bg-opacity-20">
+                      <td class="flex px-4 py-2 whitespace-nowrap"></td>
+                      <td class="px-4 py-2 whitespace-nowrap">14</td>
+                      <td class="px-4 py-2 whitespace-nowrap">9</td>
+                      <td class="px-4 py-2 whitespace-nowrap">9</td>
+                      <td class="px-4 py-2 whitespace-nowrap">9</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!--  -->
+              <div class="flex justify-between mt-10">
+                <h3 class="text-xl roboto-medium">Event Diikuti</h3>
+                <span class="text-xs text-blue-500">
+                  <i class="fa fa-user"></i> #konributor
+                </span>
+              </div>
+              <hr class="mb-2" />
+              <div class="shadow-lg rounded-lg overflow-hidden">
+                <table class="min-w-full text-sm text-gray-400">
+                  <thead
+                    class="dark:bg-gray-800 bg-gray-300 text-gray-600 dark:text-white text-xs uppercase font-medium">
+                    <tr>
+                      <th
+                        scope="col"
+                        class="px-6 py-3 text-left tracking-wider">
+                        Gelanggang
+                      </th>
+                      <th
+                        scope="col"
+                        class="px-6 py-3 text-left tracking-wider">
+                        Event
+                      </th>
+                      <th
+                        scope="col"
+                        class="px-6 py-3 text-left tracking-wider">
+                        Prestasi
+                      </th>
+                      <th
+                        scope="col"
+                        class="px-6 py-3 text-left tracking-wider">
+                        Generasi Jalur
+                      </th>
+                      <th
+                        scope="col"
+                        class="px-6 py-3 text-left tracking-wider">
+                        Konributor
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody
+                    class="dark:bg-gray-800 dark:text-white text-gray-600 bg-gray-100">
+                    <tr class="dark:bg-gray-700 bg-gray-100 bg-opacity-20">
+                      <td class="flex px-4 py-2 whitespace-nowrap"></td>
+                      <td class="px-4 py-2 whitespace-nowrap">14</td>
+                      <td class="px-4 py-2 whitespace-nowrap">9</td>
+                      <td class="px-4 py-2 whitespace-nowrap">9</td>
+                      <td class="px-4 py-2 whitespace-nowrap">9</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- --------------------- -->
+              <div class="flex justify-between mt-10">
+                <h3 class="text-xl roboto-medium">Atlet Pacu</h3>
+                <span class="text-xs text-blue-500">
+                  <i class="fa fa-user"></i> #konributor
+                </span>
+              </div>
+              <hr class="mb-2" />
+              <div class="shadow-lg rounded-lg overflow-hidden">
+                <table class="min-w-full text-sm text-gray-400">
+                  <thead
+                    class="dark:bg-gray-800 bg-gray-300 text-gray-600 dark:text-white text-xs uppercase font-medium">
+                    <tr>
+                      <th
+                        scope="col"
+                        class="px-6 py-3 text-left tracking-wider">
+                        Nama
+                      </th>
+                      <th
+                        scope="col"
+                        class="px-6 py-3 text-left tracking-wider">
+                        Tahun Aktif
+                      </th>
+                      <th
+                        scope="col"
+                        class="px-6 py-3 text-left tracking-wider">
+                        Status Aktif
+                      </th>
+                      <th
+                        scope="col"
+                        class="px-6 py-3 text-left tracking-wider">
+                        Generasi Jalur
+                      </th>
+                      <th
+                        scope="col"
+                        class="px-6 py-3 text-left tracking-wider">
+                        Konributor
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody
+                    class="dark:bg-gray-800 dark:text-white text-gray-600 bg-gray-100">
+                    <tr class="dark:bg-gray-700 bg-gray-100 bg-opacity-20">
+                      <td class="flex px-4 py-2 whitespace-nowrap"></td>
+                      <td class="px-4 py-2 whitespace-nowrap">14</td>
+                      <td class="px-4 py-2 whitespace-nowrap">9</td>
+                      <td class="px-4 py-2 whitespace-nowrap">9</td>
+                      <td class="px-4 py-2 whitespace-nowrap">9</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="flex justify-between mt-10">
+                <h3 class="text-xl roboto-medium">Sumber Informasi</h3>
+              </div>
+              <hr class="mb-2" />
+              <ul class="text-blue-500">
+                <li class="mb-2">
+                  <a href="#">Tetua Desa</a>
+                  <span class="text-xs text-blue-500">
+                    <i class="fa fa-user"></i> #konributor
+                  </span>
+                </li>
+                <li class="mb-2">
+                  <a href="https://www.kuansing.go.id/">
+                    https://www.kuansing.go.id/
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </main>
       <!-- Main Content End -->
     </div>

@@ -10,14 +10,22 @@
     <link
       href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
       rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap-grid-only-css/dist/css/bootstrap-grid.min.css" />
+
     <script>
       tailwind.config = {
         darkMode: 'class',
       };
     </script>
   </head>
-  <body class="bg-white dark:bg-black text-black dark:text-white">
+  <body class="bg-white dark:bg-black text-gray-600 dark:text-white">
     <div class="min-h-screen flex flex-col items-center justify-center">
       <!-- NAVBAR DAN SIDEBAR -->
       <nav
@@ -268,14 +276,14 @@
       <!-- Main Content -->
       <main
         class="flex-grow container mx-auto px-4 mt-4 sm:px-6 lg:px-8 py-16 content">
-        <h1 class="text-4xl font-bold mb-8 mt-20">Artikel</h1>
+        <h1 class="text-4xl font-bold mb-8 mt-20">List Jalur</h1>
         <!-- Daftar Kategori -->
         <div class="mb-12">
           <div class="flex items-baseline space-x-4">
             <a
               href="#"
               class="text-black dark:text-gray-300 hover:text-gray-500 mr-2 dark:hover:text-gray-600 rounded-full text-sm font-medium active-category"
-              >Semua</a
+              >Jalur</a
             >
             <a
               href="#"
@@ -285,21 +293,75 @@
             <a
               href="#"
               class="text-black dark:text-gray-300 hover:text-gray-500 mr-2 dark:hover:text-gray-600 rounded-full text-sm font-medium"
-              >Jalur</a
+              >Tukang</a
             >
             <a
               href="#"
               class="text-black dark:text-gray-300 hover:text-gray-500 mr-2 dark:hover:text-gray-600 rounded-full text-sm font-medium"
-              >Juara</a
+              >Event</a
             >
             <a
               href="#"
               class="text-black dark:text-gray-300 hover:text-gray-500 mr-2 dark:hover:text-gray-600 rounded-full text-sm font-medium"
-              >Sejarah</a
+              >Pacu Jalur</a
             >
           </div>
         </div>
-        <!-- list -->
+
+        <!-- ****************** list card ************************* -->
+        <div class="container bootstrap-wrapper flex justify-start">
+          <div class="row w-full">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div
+                tabindex="0"
+                aria-label="card 1"
+                class="focus:outline-none w-full lg:mb-0 bg-white dark:bg-gray-800 p-6 shadow-md border rounded">
+                <div
+                  class="flex items-center border-b border-gray-200 dark:border-gray-700 pb-2">
+                  <img
+                    src="./asset/png/icon.png"
+                    alt="coin avatar"
+                    class="w-12 h-12 rounded-full" />
+                  <div class="flex items-start justify-between w-full">
+                    <div class="pl-3 w-full">
+                      <p
+                        tabindex="0"
+                        class="text-small roboto-medium focus:outline-none text-xl font-medium leading-5 text-gray-800 dark:text-white">
+                        Selendang Putri Danau Seroja
+                      </p>
+                      <p
+                        tabindex="0"
+                        class="focus:outline-none roboto-medium text-xs leading-normal pt-2 text-gray-500 dark:text-gray-200">
+                        Dari Desa Tanjung Simandolak, Kecamatan Benai.
+                      </p>
+                    </div>
+                    <div role="img" aria-label="bookmark">
+                      <i class="fa fa-star 2x"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="px-2">
+                  <p
+                    tabindex="0"
+                    class="focus:outline-none text-sm leading-5 py-4 text-gray-600 dark:text-gray-200">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quam amet enim totam ipsa voluptatum...
+                  </p>
+                  <div tabindex="0" class="focus:outline-none flex">
+                    <div
+                      class="py-2 px-4 text-xs leading-3 text-indigo-700 rounded-full bg-indigo-100">
+                      <i class="fa fa-users"></i> 1000 fens
+                    </div>
+                    <div
+                      class="py-2 px-4 ml-3 text-xs leading-3 text-indigo-700 rounded-full bg-indigo-100">
+                      <i class="fa fa-eye"></i> 100 view
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
       <!-- Main Content End -->
     </div>

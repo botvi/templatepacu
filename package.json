@@ -1,0 +1,11 @@
+{
+  "name": "templatepacu",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/botvi/templatepacu.git",
+  "author": "egooktafanda97 <egooktafanda1097@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap-grid-only-css": "^4.1.3"
+  }
+}
