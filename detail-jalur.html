@@ -15,6 +15,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="detail-jalur.css" />
     <link
       rel="stylesheet"
       href="./node_modules/bootstrap-grid-only-css/dist/css/bootstrap-grid.min.css" />
@@ -201,7 +202,7 @@
 
       <div
         id="mobile-menu"
-        class="fixed inset-y-0 left-0 w-64  text-black dark:bg-black border border-gray-700 transform -translate-x-full transition-transform duration-300 ease-in-out z-50 rounded-lg">
+        class="fixed inset-y-0 left-0 w-64 bg-white text-black dark:bg-black border border-gray-700 transform -translate-x-full transition-transform duration-300 ease-in-out z-50 rounded-lg">
         <div class="flex items-center justify-between px-4 pt-4 pb-2">
           <a href="#" class="text-black dark:text-gray-300 text-2xl font-bold"
             >wikipacujalur</a
@@ -274,68 +275,91 @@
       </div>
 
 <!-- Main Content -->
-<main class="container mx-auto px-4 mt-10 sm:px-6 lg:px-8 py-8 flex flex-col lg:flex-row content">
-  <!-- TOC Toggle Button -->
-  <button id="toc-toggle" type="button" class="mt-4 lg:hidden text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-4">Daftar Isi</button>
-  
-  <!-- Table of Contents -->
-  <aside class="lg:w-1/4 lg:pr-8 mb-4 lg:mb-0">
-    <nav id="toc" class="sticky top-16 p-4 rounded-lg shadow-md hidden lg:block">
-      <h2 class="text-xl font-semibold mb-2">Daftar Isi</h2>
-      <ul class="space-y-2 text-gray-700 dark:text-gray-300">
-        <li><a href="#sejarah" class="hover:underline">Sejarah</a></li>
-        <li><a href="#filosofi" class="hover:underline">Filosofi</a></li>
-        <li><a href="#tentang-jalur" class="hover:underline">Tentang Jalur</a></li>
-        <li><a href="#prestasi" class="hover:underline">Prestasi</a></li>
-        <li><a href="#event-diikuti" class="hover:underline">Event Diikuti</a></li>
-        <li><a href="#atlet-pacu" class="hover:underline">Atlet Pacu</a></li>
-        <li><a href="#sumber-informasi" class="hover:underline">Sumber Informasi</a></li>
-      </ul>
-    </nav>
-  </aside>
+<main class="container mx-auto px-4 mt-10 sm:px-6 lg:px-8 py-8">
+  <!-- Full-width Header -->
+  <header class="text-dark dark:text-white py-6 mb-10 mt-10">
+    <div class="container mx-auto">
+      <p class="mt-2 text-md mb-3">Minggu, 03 September 2023</p>
+      <h1 class="text-5xl font-bold mb-3">Selendang Putri Danau Seroja</h1>
+      <p class="mt-2 text-md">Dari desa Tanjung Simandolak, Kecamatan Benai, Kabupaten Kuantan Singingi, Provinsi Riau.</p>
+    </div>
+  </header>
 
-  <!-- Article Content -->
-  <article class="w-full lg:w-3/4 p-4 lg:p-6 rounded-lg shadow-md">
-    <!-- Article Header -->
-    <header class="mb-4">
-      <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-300">Seleng Putri Danau Seroja</h1>
-      <div class="mt-2 text-gray-800 dark:text-gray-300">
-        <p class="mb-2">
-          Dari desa Tanjung Simandolak, Kecamatan Benai, Kabupaten Kuantan Singingi, Provinsi Riau.
-        </p>
-        <span class="text-xs">
-          <i class="fa fa-user"></i> #kontributor
-        </span>
-        <span class="text-xs">
-          <i class="fa fa-user"></i> 1000 #fens
-        </span>
-        <span class="text-xs">
-          <i class="fa fa-user"></i> 1000 #like
-        </span>
-        <div>
-          <strong>Julukan: Putri danau seroja</strong>
+  <div class="flex flex-col lg:flex-row content">
+    <aside class="lg:w-1/5 mb-8 lg:mb-0">
+      <nav class="sticky top-32">
+        <div class="flex gap-2 mb-5">
+          <button type="button" class="flex items-center justify-center w-full text-white bg-[#3b5998] hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 dark:focus:ring-[#3b5998]/55 mb-2">
+            <i class='bx bxs-share-alt mr-2'></i><span>Bagikan</span>
+          </button>
+          <button type="button" class="flex items-center justify-center w-full text-gray-900 bg-[#F7BE38] hover:bg-[#F7BE38]/90 focus:ring-4 focus:outline-none focus:ring-[#F7BE38]/50 font-medium rounded-lg text-sm px-5 py-2.5 dark:focus:ring-[#F7BE38]/50 mb-2">
+            <i class='bx bxs-bookmark-plus mr-2'></i><span>Bookmark</span>
+          </button>
         </div>
-      </div>
-    </header>
+        <button type="button" class="block lg:hidden text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2" onclick="toggleMenu()">
+          Daftar Isi
+        </button>
+        <div id="toc-menu" class="hidden lg:block mt-4">
+          <h2 class="text-2xl font-bold mb-6">Daftar Isi</h2>
+          <ul class="list-inside">
+            <li class="mb-4 font-semibold">
+              <a href="#sejarah" class="fixed-width-item text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                <i class='bx bxs-right-arrow-alt mr-2'></i>Sejarah
+              </a>
+            </li>
+            <li class="mb-4 font-semibold">
+              <a href="#filosofi" class="fixed-width-item text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                <i class='bx bxs-right-arrow-alt mr-2'></i>Filosofi
+              </a>
+            </li>
+            <li class="mb-4 font-semibold">
+              <a href="#tentangjalur" class="fixed-width-item text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                <i class='bx bxs-right-arrow-alt mr-2'></i>Tentang Jalur
+              </a>
+            </li>
+            <li class="mb-4 font-semibold">
+              <a href="#prestasi" class="fixed-width-item text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                <i class='bx bxs-right-arrow-alt mr-2'></i>Prestasi
+              </a>
+            </li>
+            <li class="mb-4 font-semibold">
+              <a href="#eventdiikuti" class="fixed-width-item text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                <i class='bx bxs-right-arrow-alt mr-2'></i>Event Diikuti
+              </a>
+            </li>
+            <li class="mb-4 font-semibold">
+              <a href="#atletpacu" class="fixed-width-item text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                <i class='bx bxs-right-arrow-alt mr-2'></i>Atlet Pacu
+              </a>
+            </li>
+            <li class="mb-4 font-semibold">
+              <a href="#sumberinformasi" class="fixed-width-item text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                <i class='bx bxs-right-arrow-alt mr-2'></i>Sumber Informasi
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </aside>
+    
 
-    <!-- Article Content -->
-    <section class="text-lg text-gray-800 dark:text-gray-300 leading-relaxed space-y-4">
-      <h2 id="sejarah" class="text-2xl font-semibold mt-6">Sejarah</h2>
-      <hr class="mb-2" />
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+    
+    
+    
 
-      <h2 id="filosofi" class="text-2xl font-semibold mt-6">Filosofi</h2>
-      <hr class="mb-2" />
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
-
-      <!-- Tentang Jalur Section -->
-      <div class="flex justify-between mt-8">
-        <h3 class="text-xl roboto-medium">Tentang Jalur</h3>
-        <span class="text-xs text-blue-500">
-          <i class="fa fa-user"></i> #konributor
-        </span>
-      </div>
-      <hr class="mb-2" />
+    <!-- Articles Grid -->
+    <section class="lg:w-3/4 lg:pl-8 grid grid-cols-1 gap-6">
+      <article class="rounded-lg p-4">
+        <h2 id="sejarah" class="text-2xl font-semibold mb-2">Sejarah</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+      </article>
+      <article class="rounded-lg p-4">
+        <h2 id="filosofi" class="text-2xl font-semibold mb-2">Filosofi</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+      </article>
+      <article class="rounded-lg p-4">
+        <h2 id="tentangjalur" class="text-2xl font-semibold mb-2">Tentang Jalur</h2>
+        <hr class="mb-2" />
       <div class="shadow-lg rounded-lg overflow-hidden overflow-x-auto">
         <table class="min-w-full text-sm text-gray-400">
           <thead class="bg-gray-300 text-gray-600 dark:text-gray-600 text-xs uppercase font-medium">
@@ -360,15 +384,10 @@
           </tbody>
         </table>
       </div>
-
-      <!-- Prestasi Section -->
-      <div class="flex justify-between mt-8">
-        <h3 class="text-xl roboto-medium">Prestasi</h3>
-        <span class="text-xs text-blue-500">
-          <i class="fa fa-user"></i> #konributor
-        </span>
-      </div>
-      <hr class="mb-2" />
+      </article>
+      <article class="rounded-lg p-4">
+        <h2 id="prestasi" class="text-2xl font-semibold mb-2">Prestasi</h2>
+        <hr class="mb-2" />
       <div class="shadow-lg rounded-lg overflow-hidden overflow-x-auto">
         <table class="min-w-full text-sm text-gray-400">
           <thead class="bg-gray-300 text-gray-600 dark:text-gray-600 text-xs uppercase font-medium">
@@ -391,15 +410,10 @@
           </tbody>
         </table>
       </div>
-
-      <!-- Event Diikuti Section -->
-      <div class="flex justify-between mt-8">
-        <h3 class="text-xl roboto-medium">Event Diikuti</h3>
-        <span class="text-xs text-blue-500">
-          <i class="fa fa-user"></i> #konributor
-        </span>
-      </div>
-      <hr class="mb-2" />
+      </article>
+      <article class="rounded-lg p-4">
+        <h2 id="eventdiikuti" class="text-2xl font-semibold mb-2">Event Diikuti</h2>
+        <hr class="mb-2" />
       <div class="shadow-lg rounded-lg overflow-hidden overflow-x-auto">
         <table class="min-w-full text-sm text-gray-400">
           <thead class="bg-gray-300 text-gray-600 dark:text-gray-600 text-xs uppercase font-medium">
@@ -422,15 +436,10 @@
           </tbody>
         </table>
       </div>
-
-       <!-- Atlet Section -->
-       <div class="flex justify-between mt-10">
-        <h3 class="text-xl roboto-medium">Atlet Pacu</h3>
-        <span class="text-xs text-blue-500">
-          <i class="fa fa-user"></i> #konributor
-        </span>
-      </div>
-      <hr class="mb-2" />
+      </article>
+      <article class="rounded-lg p-4">
+        <h2 id="atletpacu" class="text-2xl font-semibold mb-2">Atlet Pacu</h2>
+        <hr class="mb-2" />
       <div class="shadow-lg rounded-lg overflow-hidden overflow-x-auto">
         <table class="min-w-full text-sm text-gray-400">
           <thead class=" bg-gray-300 text-gray-600 dark:text-gray-600 text-xs uppercase font-medium">
@@ -453,24 +462,64 @@
           </tbody>
         </table>
       </div>
-
-      <!-- Sumber Informasi Section -->
-      <h2 id="sumber-informasi" class="text-2xl font-semibold mt-6">Sumber Informasi</h2>
-      <hr class="mb-2" />
-      <p>Sumber informasi yang digunakan...</p>
+      </article>
+      <article class="rounded-lg p-4">
+        <h2 id="sumberinformasi" class="text-2xl font-semibold mb-2">Sumber Informasi</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt.
+        </p>
+      </article>
+      <!-- Add more articles as needed -->
     </section>
-  </article>
+     <!-- Artikel terkait -->
+     <aside class="lg:w-1/4 mb-8 lg:mb-0">
+      <nav class="sticky top-32">
+        <div class="flex gap-2 mb-5">
+        </div>
+        <div id="toc-menu" class="lg:block mt-4">
+          <h2 class="text-2xl font-bold mb-6">Artikel Terkait</h2>
+          <ul class="list-inside">
+            <li class="mb-4 font-semibold">
+              <a href="#article1" class="fixed-width-item text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-between items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, adipisci..</span><i class='bx bxs-right-arrow-alt'></i>
+              </a>
+            </li>
+            <li class="mb-4 font-semibold">
+              <a href="#article2" class="fixed-width-item text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-between items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, commodi!</span><i class='bx bxs-right-arrow-alt'></i>
+              </a>
+            </li>
+            <li class="mb-4 font-semibold">
+              <a href="#article3" class="fixed-width-item text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-between items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, tenetur?</span><i class='bx bxs-right-arrow-alt'></i>
+              </a>
+            </li>
+            <li class="mb-4 font-semibold">
+              <a href="#article4" class="fixed-width-item text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-between items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, quidem.</span><i class='bx bxs-right-arrow-alt'></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </aside>
+    
+    
+    
+  </div>
 </main>
-
-
+<!-- Main Content -->
 
     </div>
-<!-- Add your JavaScript code -->
 <script>
-  document.getElementById('toc-toggle').addEventListener('click', function() {
-    const toc = document.getElementById('toc');
-    toc.classList.toggle('hidden');
-  });
+   function toggleMenu() {
+      var menu = document.getElementById('toc-menu');
+      if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+      } else {
+        menu.classList.add('hidden');
+      }
+    }
 </script>
     <script>
       document
