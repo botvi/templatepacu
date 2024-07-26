@@ -277,67 +277,92 @@
       <!-- Main Content -->
       <main
         class="flex-grow container mx-auto px-4 mt-4 sm:px-6 lg:px-8 py-16 content">
-        <h1 class="text-4xl font-bold mb-8 mt-20">List Jalur</h1>
+        <h1 class="text-5xl font-bold mb-8 mt-20">List Jalur</h1>
         <!-- Daftar Kategori -->
         <div class="mb-8">
           <div class="flex items-baseline space-x-4 relative">
             <div class="flex items-baseline space-x-4 overflow-x-auto whitespace-nowrap">
-              <a href="#" class="text-black dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-600 px-5 py-2 rounded text-sm font-medium bg-gray-300 dark:bg-slate-900 dark:bg-opacity-90">List Jalur</a>
-              <a href="#" class="text-black dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-600 px-4 rounded text-sm font-medium">Atlet</a>
-              <a href="#" class="text-black dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-600 px-4 rounded text-sm font-medium">Kejuaraan</a>
-              <a href="#" class="text-black dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-600 px-4 rounded text-sm font-medium">Arena Pacu</a>
+              <a href="#" class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400">List Jalur</a>
+              <a href="#" class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400">Atlet</a>
+              <a href="#" class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400 active">Kejuaraan</a>
+              <a href="#" class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400">Arena Pacu</a>
             </div>
           </div>
         </div>
-        
 
       <!-- ****************** list card ************************* -->
-      <div class="grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
-        <div class="card relative"> <!-- Add relative positioning here -->
-          <span class="title">Selendang putri danau seroja</span>
+      <div class="grid grid-cols-1 gap-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+        <div class="card relative card-bg-light">
+          <a href="#" class="absolute top-0 left-0 p-2 top-left-icon">
+            <img src="asset/png/defaultlogo.png" width="40px" height="40px" alt="">
+          </a>
+          <a href="#" class="absolute top-0 right-0 p-2 top-right-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 34 34" style="fill: rgb(255, 205, 43);">
+              <path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+            </svg>
+          </a>
+          <span class="title text-gray-900">Selendang putri danau seroja</span>
           <span class="small-text">Dari Desa Tanjung Simandolak, Kecamatan Benai</span>
-          <span class="desc">Lorem ipsum odor amet, consectetuer adipiscing elit. Quis urna purus convallis consequat dapibus amet tristique fermentum finibus curae tellus ante facilisi habitant dui aenean imperdiet inceptos nascetur hendrerit vestibulum montes feugiat.</span>
+          <span class="desc">Lorem ipsum odor amet, consectetuer adipiscing elit.</span>
           <div class="buttons">
             <a href="#" class="button">
-              <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);"><path d="M19 2H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h4l3 3 3-3h4a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm-7 3c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zM7.177 16c.558-1.723 2.496-3 4.823-3s4.266 1.277 4.823 3H7.177z"></path></svg></span>
+              <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);">
+                  <path d="M19 2H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h4l3 3 3-3h4a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm-7 3c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zM7.177 16c.558-1.723 2.496-3 4.823-3s4.266 1.277 4.823 3H7.177z"></path>
+                </svg>
+              </span>
               <div class="button-text google">
                 <span>1000 fans</span>
               </div>
             </a>
             <a href="#" class="button">
-              <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 17c-3.859 0-7-3.14-7-7s3.141-7 7-7 7 3.14 7 7-3.141 7-7 7z"></path><path d="M12 7c-2.757 0-5 2.243-5 5s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5zm0 7c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2z"></path></svg></span>
+              <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);">
+                  <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 17c-3.859 0-7-3.14-7-7s3.141-7 7-7 7 3.14 7 7-3.141 7-7 7z"></path>
+                  <path d="M12 7c-2.757 0-5 2.243-5 5s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5zm0 7c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2z"></path>
+                </svg>
+              </span>
               <div class="button-text apple">
                 <span>100 views</span>
               </div>
             </a>
           </div>
-          <!-- SVG Icon in the top-right corner -->
-          <a href="#" class="absolute top-0 right-0 p-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" style="fill: rgb(255, 205, 43);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
-          </a>
         </div>
-        <div class="card relative"> <!-- Add relative positioning here -->
-          <span class="title">Kilek Alam Cahayo Nagori</span>
+        <div class="card relative card-bg-light">
+          <a href="#" class="absolute top-0 left-0 p-2 top-left-icon">
+            <img src="asset/png/defaultlogo.png" width="40px" height="40px" alt="">
+          </a>
+          <a href="#" class="absolute top-0 right-0 p-2 top-right-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 34 34" style="fill: rgb(255, 205, 43);">
+              <path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+            </svg>
+          </a>
+          <span class="title text-gray-900">Kilek Alam Cahayo Nagori</span>
           <span class="small-text">Dari Jaya Kopah, Kecamatan Kuantan Tengah</span>
-          <span class="desc">Lorem ipsum odor amet, consectetuer adipiscing elit. Quis urna purus convallis consequat dapibus amet tristique fermentum finibus curae tellus ante facilisi habitant dui aenean imperdiet inceptos nascetur hendrerit vestibulum montes feugiat himenaeos nullam blandit senectus odio cursus rhoncus adipiscing dapibus iaculis malesuada elit blandit quam in vehicula ex amet malesuada rhoncus netus consequat porttitor a inceptos ultrices.</span>
+          <span class="desc">Lorem ipsum odor amet, consectetuer adipiscing elit. </span>
           <div class="buttons">
             <a href="#" class="button">
-              <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);"><path d="M19 2H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h4l3 3 3-3h4a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm-7 3c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zM7.177 16c.558-1.723 2.496-3 4.823-3s4.266 1.277 4.823 3H7.177z"></path></svg></span>
+              <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);">
+                  <path d="M19 2H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h4l3 3 3-3h4a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm-7 3c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zM7.177 16c.558-1.723 2.496-3 4.823-3s4.266 1.277 4.823 3H7.177z"></path>
+                </svg>
+              </span>
               <div class="button-text google">
                 <span>1000 fans</span>
               </div>
             </a>
             <a href="#" class="button">
-              <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 17c-3.859 0-7-3.14-7-7s3.141-7 7-7 7 3.14 7 7-3.141 7-7 7z"></path><path d="M12 7c-2.757 0-5 2.243-5 5s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5zm0 7c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2z"></path></svg></span>
+              <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);">
+                  <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 17c-3.859 0-7-3.14-7-7s3.141-7 7-7 7 3.14 7 7-3.141 7-7 7z"></path>
+                  <path d="M12 7c-2.757 0-5 2.243-5 5s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5zm0 7c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2z"></path>
+                </svg>
+              </span>
               <div class="button-text apple">
                 <span>100 views</span>
               </div>
             </a>
           </div>
-          <!-- SVG Icon in the top-right corner -->
-          <a href="#" class="absolute top-0 right-0 p-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" style="fill: rgb(255, 205, 43);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
-          </a>
         </div>
       </div>
       

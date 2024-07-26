@@ -1,22 +1,44 @@
+a.bg-blue-100:hover,
+a.bg-blue-100.active {
+  background-color: rgb(254, 243, 199); /* bg-yellow-100 */
+  color: rgb(133, 77, 14); /* text-yellow-800 */
+  border-color: rgb(133, 77, 14); /* border-yellow-300 */
+}
+
+a.bg-blue-100:hover.dark,
+a.bg-blue-100.active.dark {
+  background-color: rgb(55, 65, 81); /* dark:bg-gray-700 */
+  color: rgb(253, 230, 138); /* dark:text-yellow-300 */
+  border-color: rgb(253, 230, 138); /* border-yellow-300 */
+}
+
 .card {
   position: relative;
-  max-width: 350px;
-  background-color: rgb(7 16 45);
-  background: linear-gradient(to top right, rgb(7 16 45), rgb(58 60 84));
-  background: -webkit-linear-gradient(to top right, rgb(7 16 45), rgb(58 60 84));
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   padding: 20px;
   border-radius: 20px;
-  border: 1px solid rgb(84 90 106);
-  height: 100%; /* Ensure it takes full height */
-  justify-content: space-between; /* Distribute space between content and buttons */
+  border: 1px solid rgb(84, 90, 106);
+  height: 100%;
+  justify-content: space-between;
+}
+
+.card-bg-light {
+  background-color: rgb(224, 247, 255);
+  background: linear-gradient(to top right, rgb(224, 247, 255), rgb(255, 228, 252));
+  background: -webkit-linear-gradient(to top right, rgb(224, 247, 255), rgb(255, 228, 252));
+}
+
+.card-bg-dark {
+  background-color: rgb(34, 48, 63);
+  background: linear-gradient(to top right, rgb(34, 48, 63), rgb(58, 60, 84));
+  background: -webkit-linear-gradient(to top right, rgb(34, 48, 63), rgb(58, 60, 84));
 }
 
 .card .buttons {
   margin-top: auto; /* Push buttons to the bottom */
 }
-
 
 .small-text, .title, .desc {
   font-weight: 600;
@@ -32,7 +54,6 @@
 }
 
 .title {
-  color: #fff;
   font-size: 26px;
   line-height: 26px;
 }
@@ -110,4 +131,15 @@
 .apple span:last-child {
   color: #000;
   font-weight: 800;
+}
+
+.top-left-icon, .top-right-icon {
+  z-index: 1;
+}
+
+.card .title,
+.card .small-text,
+.card .desc {
+  margin-left: 50px; /* Add left margin to avoid the icon */
+  margin-right: 50px; /* Add right margin to avoid the icon */
 }
